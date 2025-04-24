@@ -8,7 +8,7 @@ This repository contains 17 concise examples demonstrating modern and foundation
 ```csharp
 Console.WriteLine("Hello, World!");
 ```
-📚 [Docs: Hello World](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/hello-world)
+📚 [Docs: Hello World](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world)
 
 ### 2. Local Function with Lambda Expression
 ```csharp
@@ -33,6 +33,7 @@ while (j < 5) Console.Write($"While:{j++} ");
 int k = 0;
 do Console.Write($"Do:{k++} "); while (k < 5);
 ```
+📚 [Docs: Iteration Statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
 
 ### 5. Tuples
 ```csharp
