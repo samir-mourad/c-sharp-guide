@@ -81,13 +81,13 @@ if (arr is [1, 2, 3, .. var rest, 6])
 //13. LINQ
 var issues = new[]
 {
-    new Issue(1, "UI", Severty.Low, DateTime.Now.AddDays(-1)),
-    new Issue(2, "Backend", Severty.Medium, DateTime.Now.AddDays(-2)),
-    new Issue(3, "Database", Severty.High, DateTime.Now.AddDays(-3)),
-    new Issue(4, "API", Severty.Critical, DateTime.Now.AddDays(-4)),
-    new Issue(5, "UI", Severty.Low, DateTime.Now.AddDays(-5)),
-    new Issue(6, "Backend", Severty.Medium, DateTime.Now.AddDays(-6)),
-    new Issue(7, "Database", Severty.High, DateTime.Now.AddDays(-7)),
+    new Issue(1, "UI", Severity.Low, DateTime.Now.AddDays(-1)),
+    new Issue(2, "Backend", Severity.Medium, DateTime.Now.AddDays(-2)),
+    new Issue(3, "Database", Severity.High, DateTime.Now.AddDays(-3)),
+    new Issue(4, "API", Severity.Critical, DateTime.Now.AddDays(-4)),
+    new Issue(5, "UI", Severity.Low, DateTime.Now.AddDays(-5)),
+    new Issue(6, "Backend", Severity.Medium, DateTime.Now.AddDays(-6)),
+    new Issue(7, "Database", Severity.High, DateTime.Now.AddDays(-7)),
 };
 
 var dashboard = issues
@@ -125,7 +125,7 @@ var text = boxString.Value;
 Console.WriteLine($"{Echo<double>(3.14)}\n");
 
 
-//16. Lambda
+//16. Lambda Expressions
 var even = Enumerable.Range(0, 100)
     .Where(i => i % 2 == 0)
     .ToArray();
@@ -151,8 +151,8 @@ Console.WriteLine($"Downloaded page of length {length}\n");
 //Records/Enum declaration
 public record Person(string Name, int Age);
 public record Point(int X, int Y);
-public record Issue(int Id, string Component, Severty Level, DateTime OpenedOn);
-public enum Severty { Low, Medium, High, Critical }
+public record Issue(int Id, string Component, Severity Level, DateTime OpenedOn);
+public enum Severity { Low, Medium, High, Critical }
 
 
 //Classes declaration
